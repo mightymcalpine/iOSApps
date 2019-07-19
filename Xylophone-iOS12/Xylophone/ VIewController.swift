@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController{
+    
+    var player: AVAudioPlayer?
     
 
     override func viewDidLoad() {
@@ -18,8 +21,10 @@ class ViewController: UIViewController{
 
 
     @IBAction func notePressed(_ sender: UIButton) {
-        
-        
+//  all seven buttons are linked to this one IBACTION, each button is tagged with a number
+//  select a button, utilities pane, connections inspector, attributes inspector
+//  the sender, of type UIButton, passed in, is the button that triggered the IBAction
+        let url = Bundle.main.url(forResource: "note1", withExtension: "wav")!
         
     }
     
